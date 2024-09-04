@@ -17,6 +17,10 @@ app.use(cors({ origin: 'http://localhost:3001' }));
 // Middleware per il parsing dei JSON
 app.use(express.json());
 
+
+//Implementare un sistema di autenticazione semplice (es. tramite token JWT) per proteggere le operazioni di modifica e cancellazione.
+
+ 
 // Connessione al database
 mongoose.connect(mongoUri)
   .then(() => console.log('Connected to MongoDB'))
