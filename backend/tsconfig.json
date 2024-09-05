@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es6",
     "module": "commonjs",
-    "outDir": "./dist",
-    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true, // Questa opzione può aiutare a ignorare gli errori di tipo in librerie esterne
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "typeRoots": ["./node_modules/@types"] // Assicurati che i tipi siano inclusi
   },
   "include": ["src/**/*"]
 }
